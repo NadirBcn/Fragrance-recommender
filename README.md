@@ -1,3 +1,3 @@
 # Fragrance-recommmender
-![plot](E:/Bordel/Pic/app.PNG)
+![Alt text](E:/Bordel/Pic/app.PNG?raw=true "Title")
 
