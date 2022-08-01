@@ -8,7 +8,7 @@
 * Scraped over 1000 unique fragrances from sephora website using python scarpy and selenium.
 * Engineered multiple features from the text of each perfume description to quantify the most popular scents, families, and notes. In addition to a Score feature to measure the most well-liked brands and perfumes.  
 * Used Content-based method based on cosine similarity to generate our recommendation.
-* Deployed the built model in a Streamlit web app hosted using Heroku.
+* Deployed the built model in a Streamlit web app then hosted it using Heroku.
 
 ## Code and Ressource used :
 * **Python version:** 3.9.7.
