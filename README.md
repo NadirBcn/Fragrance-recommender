@@ -11,9 +11,9 @@
 * Deployed the built model in a Streamlit web app hosted using Heroku.
 
 ## Code and Ressource used :
-**Python version:** 3.9.7.
-**Packages:** requests, pandas, selenium, scrapy,matplotlib, json, re, pickle.
-**URL Selenium Scrapper GitHub:** https://github.com/LenaNevel/CAPSTONE/blob/master/00_getting_slugs.ipynb
+* **Python version:** 3.9.7.
+* **Packages:** requests, pandas, selenium, scrapy,matplotlib, json, re, pickle.
+* **URL Selenium Scrapper GitHub:** https://github.com/LenaNevel/CAPSTONE/blob/master/00_getting_slugs.ipynb
 
 
 
@@ -44,9 +44,23 @@ After the Web Scrapping and in order to go any further in the project, I had to 
 * Rearranged column order from the original and new dataframes.
 
 ## EDA
-I created insightful plots and graph and looked at the distribution of my data and the value counts for numeorus categorical varialbles. Some of the highlights of this part: 
+I created insightful plots and graphs to look at the distribution of my data and the value counts for numerous categorical variables. Some of the highlights of this part: 
+![app2](https://user-images.githubusercontent.com/94077842/182175144-c822bc11-72d7-40f8-b2c4-3ece122734f3.png)
+![app3](https://user-images.githubusercontent.com/94077842/182175373-9e0de192-0a3f-4f2e-b106-26e42ab0f377.png)
+![app4](https://user-images.githubusercontent.com/94077842/182175598-22e2737a-e319-4eb1-9c45-3a4b26b6b1bf.png)
+
+## Content-Based Recommender
+To build a content-based recommandation system, the only thing we care about is the perfume features, which are contained in my case in the 'Description' column. So I started by cleaning this column and putting the result in a new column named 'Cleaned_Description'. 
+
+Afterwards, I applied TF-IDF (Term Frequency - Inverse Document Frequency) to obtain a matrix where each column represent a word in 'Cleaned_Description' vocabulary (all the words that appear at least in one description) and each row represent a fragrance. This is done to reduce the importance of words that occur frequently and therefore, their significance in computing the final similarity score.
+
+Finally, I built my content-based similarity model based on Cosine similarity.
+
+### train-test split and cross validation
+This project is built on Content-based type recommendation. Since it is unsupervised and based entirely on fragrance features, I had to try it myself to see the relevance of the results. The recommendations were in general excellent, the biggest problem were the missing 'price' data, which means that even if the components are comparable, a client who enjoys Chanel scents is unlikely to switch to a mass-market brand.
 
 
-
-
+# Deployment
+In this final step, I built a basic streamlit web-app that given a product brand and name, return the six most similar perfumes. 
+I finallized my project by hosting the app on Heroku.  
 
