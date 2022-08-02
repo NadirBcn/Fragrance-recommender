@@ -105,21 +105,21 @@ if st.button('Recommend Me!'):
     with col2:
 
         st.markdown(product_name[2])
-        st.image(img_list[3],width=130)
+        st.image(img_list[2],width=130)
     
 
         st.markdown(product_name[3])
-        st.image(img_list[4],width=130)
+        st.image(img_list[3],width=130)
 
 
 
     with col3:
             
         st.markdown(product_name[4])
-        st.image(img_list[3],width=130)
+        st.image(img_list[4],width=130)
     
 
         st.markdown(product_name[5])
-        st.image(img_list[4],width=130)
+        st.image(img_list[5],width=130)
 
 
