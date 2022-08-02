@@ -1,5 +1,6 @@
 # Fragrance-recommmender
-![app](https://user-images.githubusercontent.com/94077842/182370118-2c460956-ccb3-4d74-b3a1-90d22aa4512f.PNG)
+![app](https://user-images.githubusercontent.com/94077842/182370327-2b3aa202-3ce6-429c-9caf-63661e6b5e5e.PNG)
+
 
 **Final Streamlit web app on :** https://frag-recom.herokuapp.com/
 
