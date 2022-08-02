@@ -12,7 +12,7 @@
 
 ## Code and Ressource used :
 * **Python version:** 3.9.7.
-* **Packages:** requests, pandas, selenium, scrapy,matplotlib, json, re, pickle.
+* **Packages:** requests, pandas, selenium, scrapy,matplotlib, json, re, pickle,streamlit.
 * **URL Selenium Scrapper GitHub:** https://github.com/LenaNevel/CAPSTONE/blob/master/00_getting_slugs.ipynb
 
 
