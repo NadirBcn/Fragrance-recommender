@@ -6,7 +6,7 @@
 
 ## Fragrance Recommendation : Project Overview
 * Created a fragrance recommendation system using the Content-based method to assist customers in finding products they may like based on products they already appreciate. 
-* Scraped over 1000 unique fragrances from sephora website using python scarpy and selenium.
+* Scraped over 1000 unique fragrances from sephora API using python scarpy and selenium.
 * Engineered multiple features from the text of each perfume description to quantify the most popular scents, families, and notes. In addition to a Score feature to measure the most well-liked brands and perfumes.  
 * Used Content-based method based on cosine similarity to generate our recommendation.
 * Deployed the built model in a Streamlit web app then hosted it using Heroku.
@@ -20,7 +20,7 @@
 
 ## Web Scrapping
 Tweaked the URL Scrapper github repo (above) to get the URL of each fragrance product from https://www.sephora.com/shop/fragrance. Then from each URL, I extracted the product ID and store it in a csv file. 
-Finally I used the csv file to go through each of the products and scrappe the relevent features. With each perfume, I got the following : 
+Finally I used the csv file to go through each of the products, and Sephora API to scrappe the relevent features. With each perfume, I got the following : 
 * product_id
 * Brand
 * Name
