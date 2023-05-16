@@ -7,6 +7,7 @@ dff = pickle.load(open('fragrances.pkl','rb'))
 df = pd.DataFrame(dff)
 cos_sim = pickle.load(open('cos_sim.pkl','rb'))
 
+# https://img.freepik.com/free-photo/autumn-flat-lay-background-white_1220-3088.jpg?w=1380&t=st=1659116982~exp=1659117582~hmac=c858947dcc436458c2a26db1b6dc50f3a4d1eb4a6bab355eeb14d03306bfb677
 #https://img.freepik.com/free-photo/autumn-flat-lay-background-white_1220-3088.jpg?w=1380&t=st=1659116982~exp=1659117582~hmac=c858947dcc436458c2a26db1b6dc50f3a4d1eb4a6bab355eeb14d03306bfb677
 #https://img.freepik.com/premium-vector/fresh-rainforest-concept-frame-background-cartoon-style_98396-1323.jpg?w=1060
 def add_bg_from_url():
@@ -14,7 +15,7 @@ def add_bg_from_url():
          f"""
          <style>
          .stApp {{
-             background-image: url("https://img.freepik.com/free-photo/autumn-flat-lay-background-white_1220-3088.jpg?w=1380&t=st=1659116982~exp=1659117582~hmac=c858947dcc436458c2a26db1b6dc50f3a4d1eb4a6bab355eeb14d03306bfb677");
+             background-image: url("https://img.freepik.com/free-vector/invitation-card-with-light-blue-theme_53876-58369.jpg?w=1060&t=st=1684253399~exp=1684253999~hmac=6e6cdee9932221484f31b8ebb3b6e07946245fe0817531cd59859430aa721bc6");
              background-attachment: fixed;
              background-size: cover
          }}
@@ -28,7 +29,8 @@ add_bg_from_url()
 
 # Function that return the image of a given product ID
 def fetch_image(product_id):
-    response = requests.get('https://api.bazaarvoice.com/data/reviews.json?Filter=contentlocale%3Aen*&Filter=ProductId%3A'+str(product_id)+'&Sort=SubmissionTime%3Adesc&Limit=6&Offset=0&Include=Products%2CComments&Stats=Reviews&passkey=caQ0pQXZTqFVYA1yYnnJ9emgUiW59DXA85Kxry8Ma02HE&apiversion=5.4&Locale=en_US')
+    #response = requests.get('https://api.bazaarvoice.com/data/reviews.json?Filter=contentlocale%3Aen*&Filter=ProductId%3A'+str(product_id)+'&Sort=SubmissionTime%3Adesc&Limit=6&Offset=0&Include=Products%2CComments&Stats=Reviews&passkey=caQ0pQXZTqFVYA1yYnnJ9emgUiW59DXA85Kxry8Ma02HE&apiversion=5.4&Locale=en_US')
+    response = requests.get('https://api.bazaarvoice.com/data/reviews.json?Filter=contentlocale%3Aen*&Filter=ProductId%3A'+str(product_id)+'&Sort=SubmissionTime%3Adesc&Limit=6&Offset=0&Include=Products%2CComments&Stats=Reviews&passkey=calXm2DyQVjcCy9agq85vmTJv5ELuuBCF2sdg4BnJzJus&apiversion=5.4&Locale=en_US')
     data = response.json()
 
 
