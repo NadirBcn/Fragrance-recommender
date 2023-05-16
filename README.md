@@ -1,8 +1,9 @@
 # Fragrance-recommmender
 ![app](https://user-images.githubusercontent.com/94077842/182370327-2b3aa202-3ce6-429c-9caf-63661e6b5e5e.PNG)
 
+![Capture](https://github.com/NadirBcn/Fragrance-recommender/assets/94077842/e17a1544-0823-469e-8cf6-3a166129c0e9)
 
-**Final Streamlit web app on :** https://frag-recom.herokuapp.com/
+**Final Streamlit web app on :** https://frag-rec.herokuapp.com/
 
 ## Fragrance Recommendation : Project Overview
 * Created a fragrance recommendation system using the Content-based method to assist customers in finding products they may like based on products they already appreciate. 
